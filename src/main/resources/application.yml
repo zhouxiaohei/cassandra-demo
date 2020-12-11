@@ -1,0 +1,19 @@
+server:
+  port: 8000
+spring:
+  application:
+     name: cassandra-demo
+  swagger:
+    package: com.zhou.demo.controller
+  data:
+     cassandra:
+       ## 配置多个和单个可能是一样的
+       contact-points: 127.0.0.1
+       keyspace-name: test
+
+
+logging:
+  path: ${user.dir}/logs
+  file: ${logging.path}/demo.log
+  level:
+      root: info
